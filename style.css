@@ -46,7 +46,7 @@ main {
 	top: 160px;
 }
 
-.items {
+section {
 	display: inline-block;
 	border: 1px solid var(--itemheader);
 	width: 25%;
