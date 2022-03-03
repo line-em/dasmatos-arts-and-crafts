@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--mainfont: Helvetica, sans-serif;
+	--itemheader: mediumspringgreen;
+}
+
+img,
+button,
+p,
+.items {
+	padding: 10px;
+}
+
+/*** header content ***/
+
+header {
+	background: url(./images/pattern.jpeg);
+	background-size: 50%;
+	width: 100%;
+	padding: 2rem;
+	position: fixed;
+	z-index: 1;
+}
+
+h1 {
+	font: bold 100px var(--mainfont);
+	color: grey;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*** main page content ***/
+
+main {
+	position: relative;
+	margin: 30px;
+	text-align: center;
+	display: inline-block;
+	top: 160px;
+}
+
+.items {
+	display: inline-block;
+	border: 1px solid var(--itemheader);
+	width: 25%;
+	margin: 30px;
+}
+
+h2:first-of-type {
+	font: bold 32px var(--mainfont);
+	color: white;
+	background-color: var(--itemheader);
+}
+
+h3 {
+	font: bold 18px var(--mainfont);
+}
+
+p {
+	font: 14px/1.5 var(--mainfont);
+}
+
+button {
+	border: 1px solid var(--itemheader);
+	background-color: var(--itemheader);
+	font: bold 14px var(--mainfont);
+}
+
+/*** color change ***/
+
+main section:nth-child(2) {
+	--itemheader: lightcoral;
+}
+main section:nth-child(3) {
+	--itemheader: skyblue;
+}
+
+/*** WIP: media-query ***/
+/***
+@media (max-width: 1500px) {
+	h1 {
+		font-size: 90px;
+	}
+	main {
+		margin: 50px 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	h1 {
+		font-size: 75px;
+	}
+	main {
+		margin: 50px 0;
+	}
+	.items {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	main {
+		margin: 0;
+	}
+	.items {
+		width: 90%;
+	}
+}
+***/
