@@ -53,7 +53,7 @@ main {
 	margin: 30px;
 }
 
-h2:first-of-type {
+h2 {
 	font: bold 32px var(--mainfont);
 	color: white;
 	background-color: var(--itemheader);
